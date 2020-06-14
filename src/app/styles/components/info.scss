@@ -1,0 +1,14 @@
+.info {
+  margin-bottom: 70px;
+
+  &__desc {
+    font-size: 15px;
+    text-align: justify;
+
+    @include mobile {
+      padding: 0 10px;
+      line-height: 20px;
+    }
+  }
+
+}

@@ -1,0 +1,354 @@
+<section class="calculator">
+    <div class="container">
+        <h3 class="calculator__title section__title">калькулятор <br>(стоимость пользователь узнает по телефону)</h3>
+        <ul class="calculator__list">
+            <li class="calculator__item">
+                <button class="calculator__btn calculator__btn--active" onclick="windowSelection(event, 'singleLeaf')">
+                    <img class="calculator__img" src="images/window-1.jpg" alt="Одностворчатое">
+                    Одностворчатое
+                </button>
+            </li>
+            <li class="calculator__item">
+                <button class="calculator__btn" onclick="windowSelection(event, 'bivalve')">
+                    <img class="calculator__img" src="images/window-2.jpg" alt="Двухстворчатое">
+                    Двухстворчатое
+                </button>
+            </li>
+            <li class="calculator__item">
+                <button class="calculator__btn" onclick="windowSelection(event, 'tricuspid')">
+                    <img class="calculator__img" src="images/window-3.jpg" alt="Трехстворчатое">
+                    Трехстворчатое
+                </button>
+            </li>
+            <li class="calculator__item">
+                <button class="calculator__btn" onclick="windowSelection(event, 'balconyBlock')">
+                    <img class="calculator__img" src="images/window-4.jpg" alt="Балконный блок">
+                    Балконный блок
+                </button>
+            </li>
+            <li class="calculator__item">
+                <button class="calculator__btn" onclick="windowSelection(event, 'balconyGlazing')">
+                    <img class="calculator__img" src="images/window-5.jpg" alt="Остекление балкона">
+                    Остекление балкона
+                </button>
+            </li>
+        </ul>
+        <div id="form-wrap">
+            <form class="calculator__form" id='singleLeaf' action="#" method="post">
+                <div class="calculator__wrapper">
+                    <div class="calculator__sizes">
+                        <div class="calculator__img">
+                            <img src="images/window-xl-1.jpg" alt="Одностворчатое">
+                            <span class="calculator__width">ширина</span>
+                            <span class="calculator__height">высота</span>
+                        </div>
+                        <div class="calculator__wrap-input">
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">ширина, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="width"
+                                       placeholder="120" required>
+
+                            </div>
+                            <span class="calculator__x">X</span>
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">высота, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="height"
+                                       placeholder="120" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__criteria">
+                        <h6 class="calculator__criteria-title">Одностворчатое окно КВЕ</h6>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">1.Критерий выбора</p>
+                            <div class="calculator__criteria-label-wrap">
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="1">
+                                    <span class="calculator__criteria-label-text">пункт выбора 1</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="2">
+                                    <span class="calculator__criteria-label-text">пункт выбора 2</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="3">
+                                    <span class="calculator__criteria-label-text">пункт выбора 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">2.Выберите открывание створки</p>
+                            <span class="form__select">
+                            <select class="form__select-child" name="select">
+                            <option value="volvo">Не открывается</option>
+                            <option value="saab">Открывается</option>
+                        </select>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__number">
+                    <label class="calculator__number-label">
+                        <input class="form__phone" type="tel" placeholder="Введите номер" required>
+                    </label>
+                    <button class="btn btn--purple">рассчитать</button>
+                </div>
+            </form>
+            <form class="calculator__form" id='bivalve' action="#" method="post">
+                <div class="calculator__wrapper">
+                    <div class="calculator__sizes">
+                        <div class="calculator__img">
+                            <img src="images/window-xl-2.jpg" alt="Одностворчатое">
+                            <span class="calculator__width">ширина</span>
+                            <span class="calculator__height">высота</span>
+                        </div>
+                        <div class="calculator__wrap-input">
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">ширина, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="width"
+                                       placeholder="120" required>
+
+                            </div>
+                            <span class="calculator__x">X</span>
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">высота, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="height"
+                                       placeholder="120" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__criteria">
+                        <h6 class="calculator__criteria-title">Двухстворчатое окно КВЕ</h6>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">1.Критерий выбора</p>
+                            <div class="calculator__criteria-label-wrap">
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="1">
+                                    <span class="calculator__criteria-label-text">пункт выбора 1</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="2">
+                                    <span class="calculator__criteria-label-text">пункт выбора 2</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="3">
+                                    <span class="calculator__criteria-label-text">пункт выбора 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">2.Выберите открывание створки</p>
+                            <span class="form__select">
+                            <select class="form__select-child" name="select">
+                            <option value="volvo">Не открывается</option>
+                            <option value="saab">Открывается</option>
+                        </select>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__number">
+                    <label class="calculator__number-label">
+                        <input class="form__phone" type="tel" placeholder="Введите номер" required>
+                    </label>
+                    <button class="btn btn--purple">рассчитать</button>
+                </div>
+            </form>
+            <form class="calculator__form" id='tricuspid' action="#" method="post">
+                <div class="calculator__wrapper">
+                    <div class="calculator__sizes">
+                        <div class="calculator__img">
+                            <img src="images/window-xl-3.jpg" alt="Одностворчатое">
+                            <span class="calculator__width">ширина</span>
+                            <span class="calculator__height">высота</span>
+                        </div>
+                        <div class="calculator__wrap-input">
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">ширина, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="width"
+                                       placeholder="120" required>
+
+                            </div>
+                            <span class="calculator__x">X</span>
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">высота, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="height"
+                                       placeholder="120" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__criteria">
+                        <h6 class="calculator__criteria-title">Трехстворчатое окно КВЕ</h6>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">1.Критерий выбора</p>
+                            <div class="calculator__criteria-label-wrap">
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="1">
+                                    <span class="calculator__criteria-label-text">пункт выбора 1</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="2">
+                                    <span class="calculator__criteria-label-text">пункт выбора 2</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="3">
+                                    <span class="calculator__criteria-label-text">пункт выбора 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">2.Выберите открывание створки</p>
+                            <span class="form__select">
+                            <select class="form__select-child" name="select">
+                            <option value="volvo">Не открывается</option>
+                            <option value="saab">Открывается</option>
+                        </select>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__number">
+                    <label class="calculator__number-label">
+                        <input class="form__phone" type="tel" placeholder="Введите номер" required>
+                    </label>
+                    <button class="btn btn--purple">рассчитать</button>
+                </div>
+            </form>
+            <form class="calculator__form" id='balconyBlock' action="#" method="post">
+                <div class="calculator__wrapper">
+                    <div class="calculator__sizes">
+                        <div class="calculator__img">
+                            <img src="images/window-xl-4.jpg" alt="Одностворчатое">
+                            <span class="calculator__width">ширина</span>
+                            <span class="calculator__height">высота</span>
+                        </div>
+                        <div class="calculator__wrap-input">
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">ширина, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="width"
+                                       placeholder="120" required>
+
+                            </div>
+                            <span class="calculator__x">X</span>
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">высота, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="height"
+                                       placeholder="120" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__criteria">
+                        <h6 class="calculator__criteria-title">Балконный блок</h6>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">1.Критерий выбора</p>
+                            <div class="calculator__criteria-label-wrap">
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="1">
+                                    <span class="calculator__criteria-label-text">пункт выбора 1</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="2">
+                                    <span class="calculator__criteria-label-text">пункт выбора 2</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="3">
+                                    <span class="calculator__criteria-label-text">пункт выбора 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">2.Выберите открывание створки</p>
+                            <span class="form__select">
+                            <select class="form__select-child" name="select">
+                            <option value="volvo">Не открывается</option>
+                            <option value="saab">Открывается</option>
+                        </select>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__number">
+                    <label class="calculator__number-label">
+                        <input class="form__phone" type="tel" placeholder="Введите номер" required>
+                    </label>
+                    <button class="btn btn--purple">рассчитать</button>
+                </div>
+            </form>
+            <form class="calculator__form" id='balconyGlazing' action="#" method="post">
+                <div class="calculator__wrapper">
+                    <div class="calculator__sizes">
+                        <div class="calculator__img">
+                            <img src="images/window-xl-5.jpg" alt="Одностворчатое">
+                            <span class="calculator__width">ширина</span>
+                            <span class="calculator__height">высота</span>
+                        </div>
+                        <div class="calculator__wrap-input">
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">ширина, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="width"
+                                       placeholder="120" required>
+
+                            </div>
+                            <span class="calculator__x">X</span>
+                            <div class="calculator__wrap-label">
+                                <label class="calculator__label">высота, см</label>
+                                <input class="calculator__input"
+                                       type="text" name="height"
+                                       placeholder="120" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__criteria">
+                        <h6 class="calculator__criteria-title">Остекление балкона</h6>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">1.Критерий выбора</p>
+                            <div class="calculator__criteria-label-wrap">
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="1">
+                                    <span class="calculator__criteria-label-text">пункт выбора 1</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="2">
+                                    <span class="calculator__criteria-label-text">пункт выбора 2</span>
+                                </label>
+                                <label class="calculator__criteria-label">
+                                    <input class="form__radio" type="radio" name="radio" value="3">
+                                    <span class="calculator__criteria-label-text">пункт выбора 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="calculator__item">
+                            <p class="calculator__criteria-desc">2.Выберите открывание створки</p>
+                            <span class="form__select">
+                            <select class="form__select-child" name="select">
+                            <option value="volvo">Не открывается</option>
+                            <option value="saab">Открывается</option>
+                        </select>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__number">
+                    <label class="calculator__number-label">
+                        <input class="form__phone" type="tel" placeholder="Введите номер" required>
+                    </label>
+                    <button class="btn btn--purple">рассчитать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

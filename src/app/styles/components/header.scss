@@ -1,0 +1,50 @@
+.header {
+  background: #e8e8e8;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  &__wrap {
+    display: flex;
+
+    @include mobile{
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+
+  &__logo-wrap {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    @include mobile{
+      align-items: normal;
+      width:auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__telephones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
+    @include mobile{
+      align-items: normal;
+      width: auto;
+    }
+  }
+
+  &__telephone {
+    font-size: 40px;
+    color: #767676;
+
+    @include mobile{
+      font-size: 30px;
+    }
+  }
+}
+
+

@@ -1,0 +1,13 @@
+.footer {
+  background: #767676;
+  min-height: 148px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    color: #fffefe;
+    font-size: 24px;
+    min-height: 148px;
+
+  }
+}
